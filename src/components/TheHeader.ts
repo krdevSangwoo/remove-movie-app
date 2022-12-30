@@ -1,6 +1,16 @@
-import { Component } from "../core/core.js";
+import { Component } from "../core/core";
+
+interface Menu {
+  name: string;
+  href: string;
+}
+interface State {
+  [key: string]: unknown;
+  menus: Menu[];
+}
 
 export default class TheHeader extends Component {
+  public state!: State;
   constructor() {
     super({
       tagName: "header",
@@ -23,7 +33,7 @@ export default class TheHeader extends Component {
       <nav>
         <ul>
           ${this.state.menus
-            .map((menu) => {
+            .map((menu: Menu) => {
               const href = menu.href.split("?")[0];
               const hash = location.hash.split("?")[0];
               const isActive = href === hash;

@@ -1,5 +1,5 @@
-import { Component } from "../core/core.js";
-import aboutStore from "../store/about.js";
+import { Component } from "../core/core";
+import aboutStore from "../store/about";
 
 export default class About extends Component {
   render() {

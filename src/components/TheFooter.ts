@@ -1,7 +1,17 @@
-import { Component } from "../core/core.js";
-import aboutStore from "../store/about.js";
+import { Component } from "../core/core";
+import aboutStore from "../store/about";
+
+interface Link {
+  href: string;
+  text: string;
+}
+interface State {
+  [key: string]: unknown;
+  links: Link[];
+}
 
 export default class TheFooter extends Component {
+  public state!: State;
   constructor() {
     super({
       tagName: "footer",

@@ -1,4 +1,4 @@
-import { Component } from "../core/core.js";
+import { Component } from "../core/core";
 
 export default class NotFound extends Component {
   render() {
