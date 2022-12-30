@@ -1,3 +1,4 @@
+/* javascript version */
 import App from "./App.js";
 import router from "./routes/index.js";
 
