@@ -1,6 +1,6 @@
-import { Component } from "./core/core.js";
-import TheHeader from "./components/TheHeader.js";
-import TheFooter from "./components/TheFooter.js";
+import { Component } from "./core/core";
+import TheHeader from "./components/TheHeader";
+import TheFooter from "./components/TheFooter";
 
 export default class App extends Component {
   render() {

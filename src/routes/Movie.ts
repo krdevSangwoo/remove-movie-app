@@ -1,5 +1,5 @@
-import { Component } from "../core/core.js";
-import movieStore, { getMovieDetails } from "../store/movie.js";
+import { Component } from "../core/core";
+import movieStore, { getMovieDetails } from "../store/movie";
 
 export default class Movie extends Component {
   async render() {

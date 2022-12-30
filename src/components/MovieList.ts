@@ -1,6 +1,6 @@
-import { Component } from "../core/core.js";
-import movieStore from "../store/movie.js";
-import MovieItem from "./MovieItem.js";
+import { Component } from "../core/core";
+import movieStore from "../store/movie";
+import MovieItem from "./MovieItem";
 
 export default class MovieList extends Component {
   constructor() {
@@ -38,7 +38,7 @@ export default class MovieList extends Component {
 
     const loaderEl = this.el.querySelector(".the-loader");
     movieStore.state.loading
-      ? loaderEl.classList.remove("hide")
-      : loaderEl.classList.add("hide");
+      ? loaderEl?.classList.remove("hide")
+      : loaderEl?.classList.add("hide");
   }
 }
